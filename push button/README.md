@@ -30,14 +30,14 @@
 Int ledpin=13; //  و مقدار 13 را تعریف میکند ledpin این خط یک متغییر صحیح با نام  
 Int inpin=7; // و مقدار 7 را تعریف میکند inpin این خط یک متغییر صحیح با نام
 Int val=0; //  و مقدار 0 را تعریف میکند val این خط یک متغییر صحیح با نام
-void setup() {
-pinMode(LED_BUILTIN,OUTPUT);
-pinMode(inpin,INPUT);
+void setup() { // پیکربندی اجرای برنامه
+pinMode(LED_BUILTIN,OUTPUT); //   داخلی است LED خروجی پیکربندی و 13 به عنوان
+pinMode(inpin,INPUT); // inpin ورودی 
 }
-void loop()
+void loop() // وظیفه اصلی برنامه را اجرا میکند
 {
-val=digitalRead(inpin);
-digitalWrite(LED_BUILTIN, val); //
+val=digitalRead(inpin); // این خط وضعیت پین ورودی (inPin) را می‌خواند و مقدار آن را (۰ یا ۱) در متغیر val ذخیره می‌کند.  digitalRead()  مقدار HIGH (۱) را اگر پین HIGH باشد و LOW (۰) را اگر پین LOW باشد برمی‌گرداند.
+digitalWrite(LED_BUILTIN, val); // این خط وضعیت LED داخلی را بر اساس مقدار val تنظیم می‌کند.  اگر val برابر با HIGH (۱) باشد،  LED روشن می‌شود و اگر val برابر با LOWدر کل:  LED خاموش می‌شود.
 }
 ```
 نتیجه آزمایش:
