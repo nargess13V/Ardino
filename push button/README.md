@@ -27,9 +27,9 @@
 
 
 ```cpp
-Int ledpin=13;
-Int inpin=7;
-Int val=0;
+Int ledpin=13; //  و مقدار 13 را تعریف میکند ledpin این خط یک متغییر صحیح با نام  
+Int inpin=7; // و مقدار 7 را تعریف میکند inpin این خط یک متغییر صحیح با نام
+Int val=0; //  و مقدار 0 را تعریف میکند val این خط یک متغییر صحیح با نام
 void setup() {
 pinMode(LED_BUILTIN,OUTPUT);
 pinMode(inpin,INPUT);
@@ -37,7 +37,7 @@ pinMode(inpin,INPUT);
 void loop()
 {
 val=digitalRead(inpin);
-digitalWrite(LED_BUILTIN, val);
+digitalWrite(LED_BUILTIN, val); //
 }
 ```
 نتیجه آزمایش:
